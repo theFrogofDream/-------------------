@@ -20,6 +20,10 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  const setQty = (id, qty) => {
+    dispatch({ type: "SET_QTY", id, qty });
+  };
+
   const clearCart = () => {
     dispatch({
       type: "CLEAR",
@@ -45,6 +49,7 @@ export const CartProvider = ({ children }) => {
         cartCount,
         addToCart,
         removeFromCart,
+        setQty,
         clearCart,
       }}
     >

@@ -1,6 +1,6 @@
 package main
 
-import "Backend/inernal/app"
+import "Backend/internal/app"
 
 func main() {
 	app.Run()
